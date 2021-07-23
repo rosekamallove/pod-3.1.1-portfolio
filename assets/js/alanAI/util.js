@@ -4,8 +4,8 @@
 
 const openSocial = (social) => {
   /* Add you social Links Here */
-  const linkedIn = "https://linkedin.com/";
-  const gitHub = "https://github.com/";
+  const linkedIn = "https://linkedin.com/in/rose-kamal-love-1146141b0/";
+  const gitHub = "https://github.com/rosekamallove";
 
   /* Duplicate this if-else Block if you added another socail medial link */
   if (social == "LinkedIn") {
