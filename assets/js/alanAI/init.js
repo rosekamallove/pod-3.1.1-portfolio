@@ -8,6 +8,9 @@ const alanBtnInstance = alanBtn({
     if (commandData.command === "changeThemeCommand")
       document.getElementById("slider").click();
 
+    if (commandData.command === "jokeCommand") {
+      joke();
+    }
     if (commandData.command === "resumeCommand") {
       if (downloadResume() == "No Resume") {
         alert("Issue with Resume Link");

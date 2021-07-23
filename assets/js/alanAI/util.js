@@ -2,6 +2,15 @@
  *  @Utility Functions For Alan AI *
  ***********************************/
 
+const joke = () => {
+  const LINK = document.createElement("a");
+  LINK.href =
+    "https://drive.google.com/file/d/1MGorqacNfi-EvO01veUkIi9Dae3px9fa/view?usp=sharing";
+  LINK.target = "_blank";
+  LINK.click();
+  document.body.removeChild(LINK);
+};
+
 const openSocial = (social) => {
   /* Add you social Links Here */
   const linkedIn = "https://linkedin.com/in/rose-kamal-love-1146141b0/";

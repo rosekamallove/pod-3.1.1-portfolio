@@ -1,21 +1,21 @@
-const systemTheme = document.getElementById('system-theme');
+const systemTheme = document.getElementById("system-theme");
 
-if(localStorage.getItem('system-theme') == 'true'){
+if (localStorage.getItem("system-theme") == "true") {
   systemTheme.checked = true;
 } else {
   systemTheme.checked = false;
 }
 
-systemTheme.addEventListener('change', () => {
-  localStorage.setItem('system-theme' , systemTheme.checked);
+systemTheme.addEventListener("change", () => {
+  localStorage.setItem("system-theme", systemTheme.checked);
 });
 
 // Immediately invoked function to set the theme on initial load
 (function () {
-  if(localStorage.getItem('system-theme') == 'true'){
+  if (localStorage.getItem("system-theme") == "true") {
     systemThemeToggle();
     return;
-  } 
+  }
   setThemeOnLoad();
 })();
 
@@ -41,12 +41,12 @@ function toggleTheme() {
   }
 }
 
-function setThemeOnLoad(){
-  if (localStorage.getItem('theme') === 'theme-dark') {
-    setTheme('theme-dark');
-    document.getElementById('slider').checked = false;
+function setThemeOnLoad() {
+  if (localStorage.getItem("theme") === "theme-dark") {
+    setTheme("theme-dark");
+    document.getElementById("slider").checked = false;
   } else {
-    setTheme('theme-light');
-    document.getElementById('slider').checked = true;
+    setTheme("theme-light");
+    document.getElementById("slider").checked = true;
   }
 }
